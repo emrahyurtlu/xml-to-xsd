@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Xsl 2 Xsd Converter</title>
+</head>
+<body>
+<h1>Proje sağlıklı bir şekilde çalışıyor.</h1>
+<p>
+    Xsd formatına dönüştürmek istenen xml dosyasını aşağıdaki adrese örnekteki gibi
+    <strong>POST</strong> metodu ile gönderilmelidir.
+    <br>
+    <span>İstek adresi: </span> <strong>http://localhost:8080/converter</strong>
+</p>
+
+<code>
+    <p>const formData = new FormData();</p>
+    <p>formData.append('file', fileContent);</p>
+    <br/>
+    <p>this.http.post(this.SERVICE_URL, formData, {responseType: 'blob'}).subscribe(</p>
+    <p style="text-indent: 40px">(res: Blob) => saveAs(res, 'result.xml'),</p>
+    <p style="text-indent: 40px">(err: String) => console.log('HATA: ', err)</p>
+    <p>);</p>
+</code>
+</body>
+</html>
